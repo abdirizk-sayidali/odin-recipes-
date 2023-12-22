@@ -32,8 +32,8 @@ h1 {
 
 .images img:hover {
   border-radius: 25px;
-  transform: scale(1.15);
+  transform: scale(1.08);
   transition: all ease;
   border-radius: 15px;
-  box-shadow: 0 0 5px rgb(136, 219, 140);
+  box-shadow: 0 0 5px rgb(54, 212, 240);
 }
