@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: serif;
+}
+
+.logo img {
+  width: 200px;
+  height: 200px;
+  margin: 20px 400px;
+}
+.sidebar img {
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+}
+header + h1 {
+  text-align: center;
+}
+.descripton {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.ingredients {
+  background-color: rgb(63, 44, 44);
+  border-radius: 20px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+}
+.ingredients::before {
+  content: "ingrediants";
+  margin: 0 40px;
+  color: plum;
+}
+.ingredients p {
+  margin: 0 50px;
+  margin-top: 20px;
+  letter-spacing: 6px;
+}
+
+.ingredients p::first-line {
+  background-color: gray;
+  font-size: 2rem;
+}
+.steps {
+  border: 1px solid #000;
+  border-radius: 20px;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-areas:
+    "sidebar  description"
+    "ingrediants  steps ";
+
+  grid-template-columns: 300px 600px;
+  margin: 0 50px;
+  gap: 30px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.ingredients {
+  grid-area: ingrediants;
+}
+
+.descripton {
+  grid-area: description;
+}
+
+.steps {
+  grid-area: steps;
+}
